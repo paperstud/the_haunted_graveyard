@@ -1,0 +1,59 @@
+USER MANUAL
+
+-HOW TO INSTALL-
+1.Download the the_haunted_graveyard.zip file
+2.Unzip the file
+3.Open Eclipse
+4.Click FILE -> OPEN -> the_haunted_graveyard
+5.Go to Game.java
+6.Run the game
+
+-PROJECT STRUCTURE SETUP-
+
+The project contains three classes; Game, MazeBuilder, Player, and Tile. The project also contains a folder titled â€œimagesâ€� that contains all the images used in the game.
+
+The Game class acts as the main class that contains all the JavaFX elements that build how the game looks. This class contains the main menu and lamba expressions that handle the button press that chooses what game mode you wish to play on. This class contains methods to save, load, and debug the game. 
+
+The Player class is for the user playing the game and tracks the position, ammo count, and the playersâ€™ graphic.
+
+The Tile class is for any object in the maze that will impact the player somehow such as; discoverable ammo(Holy Water), traps(Flame Traps), creatures (Witches), and the mystical creature(Death). This class sets the objects position, tile type, warning message, and outcome message.
+
+The maze itself and itâ€™s functionality is built through the MazeBuilder class.
+This class handles the size of the maze, what is added to the maze, how the player moves, how the tiles react to the players movement, and how the action events on the maze are handled.
+
+
+
+-BACKGROUND STORY-
+
+My game contains elements from Castlevania: Aria of Sorrow because I really liked the aesthetic of that game and knew sprites would be available to use. 
+
+My idea of what this game is is a spin off maze game called Aria of Sorrow: The Haunted Graveyard. The protagonist, Soma Cruz, must search through the graveyard that is in a deep fog in order to hunt and collect the soul of Death by killing him with Holy Water.
+
+Due to limited visibility, Soma must rely on his other senses to find Death and avoid obstacles such as Witches that evaporate your Holy Water, and Flame Traps that burn you if you walk near them. 
+
+
+-HOW TO PLAY-
+
+The maze is populated with Holy Water vials, Flame Traps, Witches, and Death.
+Your objective is to locate and kill Death.
+
+Controls
+-Arrow keys to move
+-Mouse click on an adjacent tile to throw a vial
+
+Flame Traps - These traps instantly kill you if you want onto their tile and you will lose. 
+Warning Message - â€œIt smells like something is cooking nearby.â€�
+Outcome Message - â€œYouâ€™ve been burned to death.â€�
+
+Witches - If you walk on a tile where a witch is, they will evaporate one of your Holy Water vials. You canâ€™t kill witches and they canâ€™t kill you.
+Warning Message - â€œA black cat sprints past you.â€�
+Outcome Message - â€œThe Witch evaporates some of your Holy Water.â€�
+
+Holy Water - These are Holy Water vials that can be found to increase your vial count. If you run out of Holy Water and thereâ€™s none left in the maze, Death consumes you and you lose.
+Warning Message - none;
+Outcome Message - â€œYou found some Holy Water!â€�
+
+Death - This is the villain you must hunt down. You must throw your vial onto Death in order to kill him. If you throw a vial and it misses, Death will move randomly one spot over. You will die and the game will end if you land on his tile.
+Warning Message - â€œYou feel a dark presence nearby.â€�
+Outcome Message - â€œDeath came for you.â€�
+
